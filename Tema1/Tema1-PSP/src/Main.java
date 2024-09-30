@@ -8,7 +8,7 @@ public class Main {
 
         try {
             Process p = proceso.start();
-            p.waitFor(); //Detiene el codigo hasta que el proceso anterior se cierred
+            p.waitFor(); //Detiene el codigo hasta que el proceso anterior se cierre
             System.out.println("Proceso lanzado");
         } catch (IOException | InterruptedException e){
             System.out.println(e.getMessage());

@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args)
+    /*public static void main(String[] args)
     {
         ProcessBuilder proceso = new ProcessBuilder("C:/Windows/System32/calc.exe");
 
@@ -13,5 +13,16 @@ public class Main {
         } catch (IOException | InterruptedException e){
             System.out.println(e.getMessage());
         }
+    }*/
+
+
+    public static void main(String[] args) {
+        ProcesoLanzador lanzador = new ProcesoLanzador();
+
+        for (int i = 1 ; i<=3; i++){
+            lanzador.lanzarProceso();
+            System.out.println("Instancia " + i + " del proceso lanzada");
+        }
     }
+
 }
